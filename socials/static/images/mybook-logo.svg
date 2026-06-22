@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">MyBook logo</title>
+  <desc id="desc">A blue book-shaped social app logo with the letters MB.</desc>
+  <rect width="96" height="96" rx="22" fill="#3f6df6"/>
+  <path d="M24 24h29c10 0 19 8 19 18v31H43c-10 0-19-8-19-18V24Z" fill="#ffffff"/>
+  <path d="M33 35h8l8 13 8-13h8v28h-8V48l-7 11h-3l-7-11v15h-7V35Z" fill="#3f6df6"/>
+  <path d="M72 31v42H43c-10 0-19-8-19-18" fill="none" stroke="#cdd9ff" stroke-width="5" stroke-linecap="round"/>
+</svg>

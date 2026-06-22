@@ -1,0 +1,78 @@
+/* All common styles will be written here */
+.mybook-header {
+    width: 100%;
+    min-height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 12px 8%;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(31, 41, 55, 0.08);
+}
+
+.mybook-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #26324d;
+    text-decoration: none;
+    font-size: 1.55rem;
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.mybook-brand:hover {
+    color: #26324d;
+}
+
+.mybook-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+.mybook-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mybook-nav a {
+    color: #3f6df6;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.mybook-nav a:hover {
+    background: #eef3ff;
+    color: #2f55d4;
+}
+
+@media (max-width: 640px) {
+    .mybook-header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 12px 20px;
+    }
+}
+
+/* .navigation{
+    background: rgba(13, 13, 13, 0.2);
+    box-shadow: 0 4px 50px rgba(0,0,0,0.6);
+    backdrop-filter: blur(3px);
+}
+
+.nav-link{
+    color: #000;
+}
+
+.nav-link:hover{
+    color: #000;
+}
+
+.nav-logo{
+    height: 60px;
+} */
