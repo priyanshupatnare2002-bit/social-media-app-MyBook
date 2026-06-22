@@ -15,7 +15,11 @@
 <div class="container" style="margin-top:20px;">
     <div class="row m-b-r m-t-3"  style="margin-top:40px;">
         <div class="col-md-2 offset-md-1">
+            {% if page_user.profileimg %}
             <img src="{{ page_user.profileimg.url }}" alt="profileimg" class="img-circle rounded-circle img-fluid" style="height: 180px; width: 150px;">
+            {% else %}
+            <img src="{% static 'images/user/default.jpg' %}" alt="profileimg" class="img-circle rounded-circle img-fluid" style="height: 180px; width: 150px;">
+            {% endif %}
         </div>
         <div class="col-md-9 p-t-2"  style="margin-top:20px;">
             <h2 class="h2-responsive">@{{page_user.username}} </h2>
@@ -47,9 +51,13 @@
         {% for post in logged_in_user_posts %}
         <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="view overlay hm-black-light m-b-2">
+                {% if post.image %}
                 <a href="{{post.image.url}}">
                 <img src="{{post.image.url}}" class="img-fluid cursor-pointer" alt="" style="height: 250px;">
                 </a>
+                {% else %}
+                <img src="{% static 'images/home/not-found.webp' %}" class="img-fluid cursor-pointer" alt="" style="height: 250px;">
+                {% endif %}
             </div>
         </div>
         {% endfor %}
